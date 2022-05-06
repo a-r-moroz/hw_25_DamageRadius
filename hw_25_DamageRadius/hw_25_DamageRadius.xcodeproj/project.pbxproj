@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705D0B611DF08A32F2B3DE4A /* Pods_hw_25_DamageRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C21618ED77A12501629DED4 /* Pods_hw_25_DamageRadius.framework */; };
 		8E0603A028259ED100D3B6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06039F28259ED100D3B6DA /* AppDelegate.swift */; };
 		8E0603A228259ED100D3B6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0603A128259ED100D3B6DA /* SceneDelegate.swift */; };
 		8E0603A428259ED100D3B6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0603A328259ED100D3B6DA /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1119B97246F06E8653591F04 /* Pods-hw_25_DamageRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw_25_DamageRadius.debug.xcconfig"; path = "Target Support Files/Pods-hw_25_DamageRadius/Pods-hw_25_DamageRadius.debug.xcconfig"; sourceTree = "<group>"; };
+		3AEB98D87A4695C1E50200CC /* Pods-hw_25_DamageRadius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw_25_DamageRadius.release.xcconfig"; path = "Target Support Files/Pods-hw_25_DamageRadius/Pods-hw_25_DamageRadius.release.xcconfig"; sourceTree = "<group>"; };
+		3C21618ED77A12501629DED4 /* Pods_hw_25_DamageRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hw_25_DamageRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E06039C28259ED100D3B6DA /* hw_25_DamageRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw_25_DamageRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E06039F28259ED100D3B6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E0603A128259ED100D3B6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705D0B611DF08A32F2B3DE4A /* Pods_hw_25_DamageRadius.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BDA5B82718513E72B088F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C21618ED77A12501629DED4 /* Pods_hw_25_DamageRadius.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E06039328259ED100D3B6DA = {
 			isa = PBXGroup;
 			children = (
 				8E06039E28259ED100D3B6DA /* hw_25_DamageRadius */,
 				8E06039D28259ED100D3B6DA /* Products */,
+				93FE195179531B1ED035242D /* Pods */,
+				8BDA5B82718513E72B088F00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = hw_25_DamageRadius;
 			sourceTree = "<group>";
 		};
+		93FE195179531B1ED035242D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1119B97246F06E8653591F04 /* Pods-hw_25_DamageRadius.debug.xcconfig */,
+				3AEB98D87A4695C1E50200CC /* Pods-hw_25_DamageRadius.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E0603B028259ED100D3B6DA /* Build configuration list for PBXNativeTarget "hw_25_DamageRadius" */;
 			buildPhases = (
+				982A376E1337853E28ED55D3 /* [CP] Check Pods Manifest.lock */,
 				8E06039828259ED100D3B6DA /* Sources */,
 				8E06039928259ED100D3B6DA /* Frameworks */,
 				8E06039A28259ED100D3B6DA /* Resources */,
+				6D5E51A0C45FE2AF893C15D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D5E51A0C45FE2AF893C15D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw_25_DamageRadius/Pods-hw_25_DamageRadius-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw_25_DamageRadius/Pods-hw_25_DamageRadius-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hw_25_DamageRadius/Pods-hw_25_DamageRadius-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982A376E1337853E28ED55D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hw_25_DamageRadius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E06039828259ED100D3B6DA /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8E0603B128259ED100D3B6DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1119B97246F06E8653591F04 /* Pods-hw_25_DamageRadius.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		8E0603B228259ED100D3B6DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AEB98D87A4695C1E50200CC /* Pods-hw_25_DamageRadius.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
