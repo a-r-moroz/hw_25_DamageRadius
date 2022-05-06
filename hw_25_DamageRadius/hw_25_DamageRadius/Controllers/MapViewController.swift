@@ -8,7 +8,7 @@
 import UIKit
 import GoogleMaps
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var buttonAppearance: UIButton!
@@ -63,11 +63,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func setParametersAction(_ sender: UIButton) {
+        
+        guard let preferencesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: PreferencesViewController.self)) as? PreferencesViewController else { return }
+        preferencesVC.modalTransitionStyle = .crossDissolve
+        preferencesVC.modalPresentationStyle = .overFullScreen
+        self.present(preferencesVC, animated: true)
     }
         
 }
 
-extension ViewController: GMSMapViewDelegate {
+extension MapViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         createMarker(coordinates: coordinate)

@@ -10,10 +10,11 @@
 		705D0B611DF08A32F2B3DE4A /* Pods_hw_25_DamageRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C21618ED77A12501629DED4 /* Pods_hw_25_DamageRadius.framework */; };
 		8E0603A028259ED100D3B6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06039F28259ED100D3B6DA /* AppDelegate.swift */; };
 		8E0603A228259ED100D3B6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0603A128259ED100D3B6DA /* SceneDelegate.swift */; };
-		8E0603A428259ED100D3B6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0603A328259ED100D3B6DA /* ViewController.swift */; };
+		8E0603A428259ED100D3B6DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0603A328259ED100D3B6DA /* MapViewController.swift */; };
 		8E0603A728259ED100D3B6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603A528259ED100D3B6DA /* Main.storyboard */; };
 		8E0603A928259ED100D3B6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603A828259ED100D3B6DA /* Assets.xcassets */; };
 		8E0603AC28259ED100D3B6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603AA28259ED100D3B6DA /* LaunchScreen.storyboard */; };
+		8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9501262825BBBD00D0383B /* PreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		8E06039C28259ED100D3B6DA /* hw_25_DamageRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw_25_DamageRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E06039F28259ED100D3B6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E0603A128259ED100D3B6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E0603A328259ED100D3B6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E0603A328259ED100D3B6DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8E0603A628259ED100D3B6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E0603A828259ED100D3B6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0603AB28259ED100D3B6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0603AD28259ED100D3B6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9501262825BBBD00D0383B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +73,10 @@
 		8E06039E28259ED100D3B6DA /* hw_25_DamageRadius */ = {
 			isa = PBXGroup;
 			children = (
+				8E9501252825BB6D00D0383B /* PreferencesVC */,
 				8E06039F28259ED100D3B6DA /* AppDelegate.swift */,
 				8E0603A128259ED100D3B6DA /* SceneDelegate.swift */,
-				8E0603A328259ED100D3B6DA /* ViewController.swift */,
+				8E9501282825BBE100D0383B /* Controllers */,
 				8E0603A528259ED100D3B6DA /* Main.storyboard */,
 				8E0603A828259ED100D3B6DA /* Assets.xcassets */,
 				8E0603AA28259ED100D3B6DA /* LaunchScreen.storyboard */,
@@ -82,13 +85,28 @@
 			path = hw_25_DamageRadius;
 			sourceTree = "<group>";
 		};
+		8E9501252825BB6D00D0383B /* PreferencesVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PreferencesVC;
+			sourceTree = "<group>";
+		};
+		8E9501282825BBE100D0383B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0603A328259ED100D3B6DA /* MapViewController.swift */,
+				8E9501262825BBBD00D0383B /* PreferencesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		93FE195179531B1ED035242D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				1119B97246F06E8653591F04 /* Pods-hw_25_DamageRadius.debug.xcconfig */,
 				3AEB98D87A4695C1E50200CC /* Pods-hw_25_DamageRadius.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0603A428259ED100D3B6DA /* ViewController.swift in Sources */,
+				8E0603A428259ED100D3B6DA /* MapViewController.swift in Sources */,
 				8E0603A028259ED100D3B6DA /* AppDelegate.swift in Sources */,
 				8E0603A228259ED100D3B6DA /* SceneDelegate.swift in Sources */,
+				8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
