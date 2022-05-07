@@ -55,6 +55,7 @@ class MapViewController: UIViewController {
     @IBAction func setParametersAction(_ sender: UIButton) {
         
         guard let preferencesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: PreferencesViewController.self)) as? PreferencesViewController else { return }
+        preferencesVC.saveDataDelegate = self //3
         preferencesVC.modalTransitionStyle = .coverVertical
         preferencesVC.modalPresentationStyle = .overFullScreen
         self.present(preferencesVC, animated: true)
@@ -72,5 +73,11 @@ extension MapViewController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         
         return true
+    }
+}
+
+extension MapViewController: Servedable {
+    func savePower(data: Bomb) {
+        print(data.power)
     }
 }
