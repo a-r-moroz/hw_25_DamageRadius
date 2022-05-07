@@ -14,6 +14,7 @@
 		8E0603A728259ED100D3B6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603A528259ED100D3B6DA /* Main.storyboard */; };
 		8E0603A928259ED100D3B6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603A828259ED100D3B6DA /* Assets.xcassets */; };
 		8E0603AC28259ED100D3B6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0603AA28259ED100D3B6DA /* LaunchScreen.storyboard */; };
+		8E94A23628268557009614DA /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94A23528268557009614DA /* ButtonExtension.swift */; };
 		8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9501262825BBBD00D0383B /* PreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		8E0603A828259ED100D3B6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0603AB28259ED100D3B6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0603AD28259ED100D3B6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E94A23528268557009614DA /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		8E9501262825BBBD00D0383B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 		8E06039328259ED100D3B6DA = {
 			isa = PBXGroup;
 			children = (
+				8E94A23528268557009614DA /* ButtonExtension.swift */,
 				8E06039E28259ED100D3B6DA /* hw_25_DamageRadius */,
 				8E06039D28259ED100D3B6DA /* Products */,
 				93FE195179531B1ED035242D /* Pods */,
@@ -227,6 +230,7 @@
 			files = (
 				8E0603A428259ED100D3B6DA /* MapViewController.swift in Sources */,
 				8E0603A028259ED100D3B6DA /* AppDelegate.swift in Sources */,
+				8E94A23628268557009614DA /* ButtonExtension.swift in Sources */,
 				8E0603A228259ED100D3B6DA /* SceneDelegate.swift in Sources */,
 				8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */,
 			);

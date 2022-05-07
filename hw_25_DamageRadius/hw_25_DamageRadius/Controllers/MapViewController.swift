@@ -11,29 +11,19 @@ import GoogleMaps
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var buttonAppearance: UIButton!
+    @IBOutlet weak var buttonAppearance: extensionButton!
     
     var circle = GMSCircle()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        setupButton(buttonAppearance)
+        buttonAppearance.setupButton(self.buttonAppearance)
         mapView.layer.cornerRadius = 5
         
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
         mapView.isIndoorEnabled = true
-    }
-    
-    private func setupButton(_ button: UIButton) {
-        
-        button.layer.cornerRadius = 5
-        button.layer.shadowColor = UIColor.gray.cgColor
-        button.layer.shadowOpacity = 1
-        button.layer.shadowOffset = .zero
-        button.layer.shadowRadius = 10
-        button.layer.rasterizationScale = UIScreen.main.scale
     }
     
     private func createMarker(coordinates: CLLocationCoordinate2D) {
@@ -65,7 +55,7 @@ class MapViewController: UIViewController {
     @IBAction func setParametersAction(_ sender: UIButton) {
         
         guard let preferencesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: PreferencesViewController.self)) as? PreferencesViewController else { return }
-        preferencesVC.modalTransitionStyle = .crossDissolve
+        preferencesVC.modalTransitionStyle = .coverVertical
         preferencesVC.modalPresentationStyle = .overFullScreen
         self.present(preferencesVC, animated: true)
     }

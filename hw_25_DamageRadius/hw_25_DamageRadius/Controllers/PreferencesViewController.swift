@@ -9,10 +9,17 @@ import UIKit
 
 class PreferencesViewController: UIViewController {
 
+    @IBOutlet weak var buttonAppearance: extensionButton!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var viewAppearance: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        buttonAppearance.setupButton(self.buttonAppearance)
+        viewAppearance.layer.cornerRadius = 25
+        viewAppearance.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
 
@@ -26,4 +33,8 @@ class PreferencesViewController: UIViewController {
     }
     */
 
+    @IBAction func saveFuelEquivalentAction(_ sender: UIButton) {
+        
+        dismiss(animated: true)
+    }
 }
