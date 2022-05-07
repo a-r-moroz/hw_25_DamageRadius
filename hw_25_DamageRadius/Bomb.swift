@@ -8,5 +8,6 @@
 import Foundation
 
 class Bomb {
+    
     var power: Float?
 }

@@ -15,10 +15,10 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var currentSliderValue: UILabel!
     
     weak var saveDataDelegate: Servedable? //1
-    let bomb = Bomb()
-    
+    var bomb = Bomb()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         currentSliderValue.text = String(format: "%.0f", slider.value)
@@ -27,6 +27,8 @@ class PreferencesViewController: UIViewController {
         currentSliderValue.layer.cornerRadius = currentSliderValue.frame.height / 2
         viewAppearance.layer.cornerRadius = 25
         viewAppearance.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        bomb.power = 10000
     }
     
     @IBAction func sliderAction(_ sender: UISlider) {
@@ -34,6 +36,16 @@ class PreferencesViewController: UIViewController {
         let sliderValue: String = String(format: "%.0f", sender.value)
         bomb.power = sender.value
         currentSliderValue.text = sliderValue
+    }
+    
+    @IBAction func infoButtonAction(_ sender: UIButton) {
+        
+//        present(sender.addInfoAlert(), animated: true)
+        guard let infoVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: InfoViewController.self)) as? InfoViewController else { return }
+        
+        infoVC.modalTransitionStyle = .coverVertical
+        infoVC.modalPresentationStyle = .overFullScreen
+        self.present(infoVC, animated: true)
     }
     
     @IBAction func saveFuelEquivalentAction(_ sender: UIButton) {

@@ -18,6 +18,7 @@
 		8E94A2382826B532009614DA /* Servedable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94A2372826B532009614DA /* Servedable.swift */; };
 		8E94A23A2826B560009614DA /* Bomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94A2392826B560009614DA /* Bomb.swift */; };
 		8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9501262825BBBD00D0383B /* PreferencesViewController.swift */; };
+		8EA968E328270FC30099BDA5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA968E228270FC30099BDA5 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8E94A2372826B532009614DA /* Servedable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servedable.swift; sourceTree = "<group>"; };
 		8E94A2392826B560009614DA /* Bomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bomb.swift; sourceTree = "<group>"; };
 		8E9501262825BBBD00D0383B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		8EA968E228270FC30099BDA5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				8E0603A328259ED100D3B6DA /* MapViewController.swift */,
 				8E9501262825BBBD00D0383B /* PreferencesViewController.swift */,
+				8EA968E228270FC30099BDA5 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				8E0603A428259ED100D3B6DA /* MapViewController.swift in Sources */,
 				8E0603A028259ED100D3B6DA /* AppDelegate.swift in Sources */,
 				8E94A23628268557009614DA /* ButtonExtension.swift in Sources */,
+				8EA968E328270FC30099BDA5 /* InfoViewController.swift in Sources */,
 				8E94A23A2826B560009614DA /* Bomb.swift in Sources */,
 				8E0603A228259ED100D3B6DA /* SceneDelegate.swift in Sources */,
 				8E9501272825BBBD00D0383B /* PreferencesViewController.swift in Sources */,

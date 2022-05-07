@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="624" width="414" height="272"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mK8-us-OBV">
-                                        <rect key="frame" x="16" y="134" width="382" height="38"/>
+                                        <rect key="frame" x="16" y="134" width="336" height="38"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -85,7 +85,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QQQ-o4-JrQ">
                                         <rect key="frame" x="16" y="20" width="382" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мощность:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-4h-Rf4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мощность" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-4h-Rf4">
                                                 <rect key="frame" x="0.0" y="0.0" width="120.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -98,7 +98,7 @@
                                                 <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="килотонн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hre-At-m9f">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="килотонн" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hre-At-m9f">
                                                 <rect key="frame" x="261.5" y="0.0" width="120.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -135,17 +135,29 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io8-Uk-BsE">
+                                        <rect key="frame" x="368" y="137.5" width="30" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="OVn-U2-QCy"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="infoButtonAction:" destination="KVJ-en-JSJ" eventType="touchUpInside" id="Q9p-RS-eLk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="io8-Uk-BsE" firstAttribute="centerY" secondItem="mK8-us-OBV" secondAttribute="centerY" id="1xI-II-rI0"/>
                                     <constraint firstItem="QQQ-o4-JrQ" firstAttribute="top" secondItem="oak-cC-TcD" secondAttribute="top" constant="20" id="3iG-ZJ-ODw"/>
                                     <constraint firstAttribute="trailing" secondItem="RSO-sB-vC7" secondAttribute="trailing" constant="16" id="7HU-SN-3xm"/>
                                     <constraint firstItem="RSO-sB-vC7" firstAttribute="top" secondItem="QQQ-o4-JrQ" secondAttribute="bottom" constant="30" id="G8s-Cy-ZJx"/>
                                     <constraint firstAttribute="trailing" secondItem="QQQ-o4-JrQ" secondAttribute="trailing" constant="16" id="O4P-9s-O3R"/>
-                                    <constraint firstAttribute="trailing" secondItem="mK8-us-OBV" secondAttribute="trailing" constant="16" id="OFv-Tt-mgB"/>
                                     <constraint firstItem="mK8-us-OBV" firstAttribute="leading" secondItem="oak-cC-TcD" secondAttribute="leading" constant="16" id="V7u-U2-9Sv"/>
+                                    <constraint firstAttribute="trailing" secondItem="io8-Uk-BsE" secondAttribute="trailing" constant="16" id="Wsi-Nr-5yb"/>
                                     <constraint firstItem="mK8-us-OBV" firstAttribute="top" secondItem="RSO-sB-vC7" secondAttribute="bottom" constant="30" id="fjc-Fu-pi2"/>
                                     <constraint firstAttribute="bottom" secondItem="mK8-us-OBV" secondAttribute="bottom" constant="100" id="m0s-VU-Gcc"/>
+                                    <constraint firstItem="io8-Uk-BsE" firstAttribute="leading" secondItem="mK8-us-OBV" secondAttribute="trailing" constant="16" id="tDT-T6-VSV"/>
                                     <constraint firstItem="RSO-sB-vC7" firstAttribute="leading" secondItem="oak-cC-TcD" secondAttribute="leading" constant="16" id="tUs-zM-Wr9"/>
                                     <constraint firstItem="QQQ-o4-JrQ" firstAttribute="leading" secondItem="oak-cC-TcD" secondAttribute="leading" constant="16" id="yhf-kQ-4AG"/>
                                 </constraints>
@@ -192,6 +204,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3Z-7R-CUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="rm3-NE-Rtt">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="j6Q-rT-gGx" customClass="InfoViewController" customModule="hw_25_DamageRadius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="20N-DS-5tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backgroud_lowOpacity" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-8n-YoY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCy-Le-GT6">
+                                <rect key="frame" x="0.0" y="511.5" width="414" height="384.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-ml-0d7">
+                                        <rect key="frame" x="16" y="64" width="382" height="162.5"/>
+                                        <mutableString key="text">От мощности зависит радиус зоны поражения. Сама зона включает три уровня повреждений:
+🔴 - Полное разрушение зданий с массивными стенами;
+🟡 - Разрушение перекрытий промышленных зданий, стальных несущих конструкций;
+🟢 - Граница зоны повреждений зданий, частичное повреждение остекления</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зачем нужна мощность взрыва?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-vW-RDf">
+                                        <rect key="frame" x="16" y="20" width="382" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMj-f2-TeA">
+                                        <rect key="frame" x="16" y="246.5" width="382" height="38"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ясно!">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backAction:" destination="j6Q-rT-gGx" eventType="touchUpInside" id="5KG-Ia-0wM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Tb7-vW-RDf" firstAttribute="leading" secondItem="UCy-Le-GT6" secondAttribute="leading" constant="16" id="CIJ-vO-9oX"/>
+                                    <constraint firstItem="bHg-ml-0d7" firstAttribute="leading" secondItem="UCy-Le-GT6" secondAttribute="leading" constant="16" id="P31-lw-ElF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tb7-vW-RDf" secondAttribute="trailing" constant="16" id="QdX-xr-jcc"/>
+                                    <constraint firstAttribute="bottom" secondItem="zMj-f2-TeA" secondAttribute="bottom" constant="100" id="R0b-Y5-W5Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="bHg-ml-0d7" secondAttribute="trailing" constant="16" id="Tab-O9-nWu"/>
+                                    <constraint firstItem="zMj-f2-TeA" firstAttribute="top" secondItem="bHg-ml-0d7" secondAttribute="bottom" constant="20" id="ep2-z6-Y7c"/>
+                                    <constraint firstItem="Tb7-vW-RDf" firstAttribute="top" secondItem="UCy-Le-GT6" secondAttribute="top" constant="20" id="hNS-X7-5Ug"/>
+                                    <constraint firstItem="bHg-ml-0d7" firstAttribute="leading" secondItem="UCy-Le-GT6" secondAttribute="leading" constant="16" id="icZ-yX-Dgi"/>
+                                    <constraint firstItem="zMj-f2-TeA" firstAttribute="leading" secondItem="UCy-Le-GT6" secondAttribute="leading" constant="16" id="l85-UT-PR5"/>
+                                    <constraint firstAttribute="trailing" secondItem="zMj-f2-TeA" secondAttribute="trailing" constant="16" id="nlR-qs-EvV"/>
+                                    <constraint firstAttribute="trailing" secondItem="bHg-ml-0d7" secondAttribute="trailing" constant="16" id="o97-mf-tQp"/>
+                                    <constraint firstItem="bHg-ml-0d7" firstAttribute="top" secondItem="Tb7-vW-RDf" secondAttribute="bottom" constant="20" id="t9V-0W-kTK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uix-EE-OVG"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uix-EE-OVG" firstAttribute="trailing" secondItem="6pM-8n-YoY" secondAttribute="trailing" id="RAR-nn-qqy"/>
+                            <constraint firstItem="UCy-Le-GT6" firstAttribute="leading" secondItem="Uix-EE-OVG" secondAttribute="leading" id="aeX-jP-eRc"/>
+                            <constraint firstItem="UCy-Le-GT6" firstAttribute="centerX" secondItem="20N-DS-5tm" secondAttribute="centerX" id="awb-AB-WaS"/>
+                            <constraint firstItem="Uix-EE-OVG" firstAttribute="trailing" secondItem="UCy-Le-GT6" secondAttribute="trailing" id="dZc-pU-zPd"/>
+                            <constraint firstAttribute="bottom" secondItem="UCy-Le-GT6" secondAttribute="bottom" id="drV-qp-cZG"/>
+                            <constraint firstItem="6pM-8n-YoY" firstAttribute="leading" secondItem="Uix-EE-OVG" secondAttribute="leading" id="stL-NY-uOj"/>
+                            <constraint firstAttribute="bottom" secondItem="6pM-8n-YoY" secondAttribute="bottom" id="sz0-dO-ayX"/>
+                            <constraint firstItem="6pM-8n-YoY" firstAttribute="top" secondItem="Uix-EE-OVG" secondAttribute="top" id="tQ1-xU-mrH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAppearance" destination="zMj-f2-TeA" id="2l7-no-IEh"/>
+                        <outlet property="viewAppearance" destination="UCy-Le-GT6" id="6aL-6G-Dfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSu-9u-TzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418.840579710145" y="65.625"/>
         </scene>
     </scenes>
     <resources>
