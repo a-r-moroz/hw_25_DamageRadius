@@ -208,6 +208,7 @@
         <!--Info View Controller-->
         <scene sceneID="rm3-NE-Rtt">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSu-9u-TzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="InfoViewController" id="j6Q-rT-gGx" customClass="InfoViewController" customModule="hw_25_DamageRadius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20N-DS-5tm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -283,7 +284,6 @@
                         <outlet property="viewAppearance" destination="UCy-Le-GT6" id="6aL-6G-Dfg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WSu-9u-TzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2418.840579710145" y="65.625"/>
         </scene>

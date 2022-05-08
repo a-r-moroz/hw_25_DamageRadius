@@ -14,8 +14,9 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var viewAppearance: UIView!
     @IBOutlet weak var currentSliderValue: UILabel!
     
-    weak var saveDataDelegate: Servedable? //1
+//    weak var saveDataDelegate: Servedable? //1
     var bomb = Bomb()
+    var saveBomb: (() -> ())?
     
     override func viewDidLoad() {
         
@@ -50,7 +51,8 @@ class PreferencesViewController: UIViewController {
     
     @IBAction func saveFuelEquivalentAction(_ sender: UIButton) {
         
-        saveDataDelegate?.savePower(data: bomb) //2
+//        saveDataDelegate?.savePower(data: bomb) //2
+        saveBomb?()
         dismiss(animated: true)
     }
 }
