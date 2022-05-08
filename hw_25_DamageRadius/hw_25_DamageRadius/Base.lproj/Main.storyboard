@@ -221,10 +221,10 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-ml-0d7">
                                         <rect key="frame" x="16" y="64" width="382" height="162.5"/>
-                                        <mutableString key="text">От мощности зависит радиус зоны поражения. Сама зона включает три уровня повреждений:
+                                        <string key="text">От мощности зависит радиус зоны поражения. Сама зона включает три уровня повреждений:
 🔴 - Полное разрушение зданий с массивными стенами;
 🟡 - Разрушение перекрытий промышленных зданий, стальных несущих конструкций;
-🟢 - Граница зоны повреждений зданий, частичное повреждение остекления</mutableString>
+🟢 - Граница зоны повреждений зданий, частичное повреждение остекления</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
