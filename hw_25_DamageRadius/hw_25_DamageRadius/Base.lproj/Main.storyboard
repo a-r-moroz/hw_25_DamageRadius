@@ -177,6 +177,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="1sN-HZ-Rn6" id="N1Q-SR-Tns"/>
                         <outlet property="buttonAppearance" destination="mK8-us-OBV" id="42V-4s-ImM"/>
                         <outlet property="currentSliderValue" destination="Euf-Zl-H9l" id="ArY-RB-gNf"/>
                         <outlet property="slider" destination="9yM-Xb-ffi" id="haC-x7-UdU"/>
@@ -208,7 +209,6 @@
         <!--Info View Controller-->
         <scene sceneID="rm3-NE-Rtt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WSu-9u-TzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="InfoViewController" id="j6Q-rT-gGx" customClass="InfoViewController" customModule="hw_25_DamageRadius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20N-DS-5tm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -280,10 +280,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="6pM-8n-YoY" id="78G-5v-y9R"/>
                         <outlet property="buttonAppearance" destination="zMj-f2-TeA" id="2l7-no-IEh"/>
                         <outlet property="viewAppearance" destination="UCy-Le-GT6" id="6aL-6G-Dfg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSu-9u-TzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2418.840579710145" y="65.625"/>
         </scene>

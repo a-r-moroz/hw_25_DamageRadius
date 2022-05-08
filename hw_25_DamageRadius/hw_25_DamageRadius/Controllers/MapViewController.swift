@@ -34,7 +34,7 @@ class MapViewController: UIViewController {
         
         let marker = GMSMarker(position: coordinates)
 //        marker.title = "Широта: \(coordinates.latitude),\nДолгота:\(coordinates.longitude)"
-        marker.snippet = "Широта: \(coordinates.latitude),\nДолгота:\(coordinates.longitude)"
+        marker.snippet = "Широта: \(coordinates.latitude),\nДолгота: \(coordinates.longitude)"
         marker.icon = GMSMarker.markerImage(with: .systemBlue)
 //        marker.icon = UIImage(systemName: "star.circle.fill")
         mapView.clear()
