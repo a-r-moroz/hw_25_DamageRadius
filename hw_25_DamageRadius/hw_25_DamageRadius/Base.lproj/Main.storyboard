@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Карта-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="BYZ-38-t0r" customClass="MapViewController" customModule="hw_25_DamageRadius" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aNZ-Ca-l69" secondAttribute="bottom" constant="20" id="xdq-0t-awu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rrl-W4-NFh"/>
+                    <navigationItem key="navigationItem" title="Карта" id="rrl-W4-NFh"/>
                     <connections>
                         <outlet property="buttonAppearance" destination="aNZ-Ca-l69" id="dBU-AJ-F1B"/>
                         <outlet property="mapView" destination="g7q-eh-29g" id="CtF-m6-U05"/>
@@ -177,6 +177,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="1sN-HZ-Rn6" id="GNW-bW-CVF"/>
                         <outlet property="buttonAppearance" destination="mK8-us-OBV" id="42V-4s-ImM"/>
                         <outlet property="currentSliderValue" destination="Euf-Zl-H9l" id="ArY-RB-gNf"/>
                         <outlet property="slider" destination="9yM-Xb-ffi" id="haC-x7-UdU"/>
@@ -279,6 +280,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="6pM-8n-YoY" id="PmU-HJ-NcV"/>
                         <outlet property="buttonAppearance" destination="zMj-f2-TeA" id="2l7-no-IEh"/>
                         <outlet property="viewAppearance" destination="UCy-Le-GT6" id="6aL-6G-Dfg"/>
                     </connections>

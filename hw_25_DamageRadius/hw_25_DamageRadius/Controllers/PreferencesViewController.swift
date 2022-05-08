@@ -13,6 +13,7 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var viewAppearance: UIView!
     @IBOutlet weak var currentSliderValue: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     weak var saveDataDelegate: Servedable? //1
     var bomb = Bomb()
@@ -29,6 +30,17 @@ class PreferencesViewController: UIViewController {
         viewAppearance.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         bomb.power = 10000
+        viewTapped()
+    }
+    
+    func viewTapped() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        backgroundImage.isUserInteractionEnabled = true
+        backgroundImage.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapped() {
+        dismiss(animated: true)
     }
     
     @IBAction func sliderAction(_ sender: UISlider) {
